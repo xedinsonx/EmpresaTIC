@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "419284b3-521e-46ec-a21d-183a975fae27",
+		"name": "TIC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25997738",
+		"_collection_link": "https://www.postman.com/technical-candidate-18095104/workspace/financiera/collection/25997738-419284b3-521e-46ec-a21d-183a975fae27?action=share&source=collection_link&creator=25997738"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/addEmpresa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Ruc\": 102324732264,\r\n    \"RazonSocial\": \"TIC_Empresa\",\r\n    \"Direccion\":\"San Isidro\",\r\n    \"Estado\": 0\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/getAllEmpresas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getAllEmpresas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/addEmpresa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Ruc\":10223438567,\r\n    \"RazonSocial\":\"TIC Empresas\",\r\n    \"Direccion\":\"San Isidro\",\r\n    \"Estado\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addEmpresas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addEmpresas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
